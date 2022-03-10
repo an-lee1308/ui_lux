@@ -1,0 +1,500 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app {
+    overflow: hidden;
+}
+/* header */
+.header {
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.menu:checked ~ .header__nav-overlay {
+    display: block;
+}
+.menu:checked ~ .header__nav-c {
+    transform: translateX(0);
+}
+.menu {
+    display: none;
+}
+.header__nav-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.header__nav-btn {
+    margin: auto;
+    display: none;
+
+}
+.header__nav-btn-fix {
+    font-size: 2.2rem;
+    color: #222;
+}
+.header__nav-c {
+    position: fixed;
+    top: 0;
+    left:0 ;
+    bottom:0;
+    background-color: #fff;
+    width: 70vw;
+    transform: translateX(-100%);
+
+}
+.header__nav-c-list {
+    margin-top: 24px;
+}
+.header__nav-c-item {
+    list-style: none;
+}
+.header__nav-c-link {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.6rem;
+    display: block;
+    padding: 8px 0;
+    margin: 0 16px;
+
+}
+.header__nav-c--close {
+    font-size: 2.5rem;
+    color: #222;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header__logo:hover > .header__logo-edit *{
+    fill: #f65e39;
+}
+.header__logo {
+    display: inline-block;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.header__search {
+    max-width: 598px;
+    min-width: 320px;
+    border-radius: 5px;
+    height: 47px;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.header__search-location {
+    height: 100%;
+    margin-left: 20px;
+    width: 300px;
+}
+.header__search-input:active {
+    border:1px solid #f65e39;
+}
+.header__search-input {
+    height: 100%;
+    border: none;
+    outline:none ;
+    font-size: 14px;
+    font-weight: 600;
+}
+.header__search-input::-webkit-input-placeholder {
+    /* Edge */
+    color: #222;
+}
+.header__search-active:focus > .header__search-date {
+
+    border: #000 1px solid;
+}   
+.header__search-date,
+.header__search-guest {
+    width: 115px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #222;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.search_icon {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    color: rgb(116, 116, 116);
+}
+.header__search-btn {
+    width: 56px;
+    height: 36px;
+    background-color: #555555;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 6.4px;
+}
+.flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+}
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header__nav-item {
+    align-items: center;
+    margin-left: 20px;
+}
+.header__nav-link:hover {
+    color: #f65e39;;
+}
+.header__nav-link {
+    text-decoration: none;
+    color: #222;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+}
+.header__language {
+    align-items: center;
+}
+.vietnam .header__nav-link {
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    width: 94px;
+    text-align: center;
+    line-height: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+.vietnam-icon {
+    margin-right: 6px;
+    margin-left: -6px;
+}
+
+/* container */
+.slider {
+    margin-top: 122px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* wellcome */
+.wellcome-heading,
+.place-heading,
+.event-heading,
+.suggest-heading,
+.discover-heading,
+ .tutorial-heading {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.wellcome-content,
+.place-content,
+.event-content,
+.suggest-content,
+.discover-content,
+.tutorial-content {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin: 8px 0;
+    color: #555;
+}
+.place__item {
+    margin: 8px 0;
+    position: relative;
+}
+.place__item-link {
+    text-decoration: none;
+    color: #fff;
+}
+.place-item__img {
+    padding-top: 125%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.place__item-heading {
+    font-size: 2.4rem;
+    margin-bottom: 4px;
+}
+.place__item-locations {
+    font-size: 1.6rem;
+    padding-top: 16px;
+}
+.place__item-info {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.event-content,
+.suggest-content,
+.place-content,
+.wellcome-content,
+.discover-content,
+.tutorial-content {
+    margin-bottom: 18px;
+}
+.event,
+.suggest,
+.place,
+.wellcome,
+.discover,
+.tutorial {
+    margin-top: 64px;
+}
+.place__list,
+.event__list,
+.suggest__list,
+.discover__list,
+.tutorial__list {
+    margin-bottom: 50px;
+}
+.event-item__img {
+    padding-top: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.suggest-item__img {
+    padding-top: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.suggest__item-link {
+    text-decoration: none;
+}
+.suggest__info-title {
+    font-size: 1.2rem;
+    color: #555555;
+    margin: 8px 0;
+}
+.suggest__info-content {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #222;
+}
+.discover__item {
+    position: relative;
+}
+.discover__header:hover {
+    background-color:rgba(0,0,0,.6);
+}
+.discover__header {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 4px 12px;
+    background-color: #bebebe;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discover__header-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+.discover__title {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 16px;
+    line-height: 3rem;
+}
+.discover-item__img {
+    height: 260px;
+    background-color: #eee; /* Dành cho các trình duyệt không hỗ trợ gradient*/
+    background-image: linear-gradient(180deg, #eee, #797979);
+    border-radius: 5px;
+}
+
+.tutorial-item__img {
+    height: 228px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+}
+.about__app-img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.about__logo-img {
+    width: 50%;
+    margin-bottom: 18px;
+}
+.about__sologan {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #222;
+}
+.about__content {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 42px;
+    color: #222;
+    display: block;
+}
+.about__qrcode-img {
+    width: 180px;
+    padding: 10px;
+    border: 1px solid rgb(0 0 0 / 20%);
+}
+.about__app-download {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 15%;
+}
+.about__app-dowwnload--img {
+    width: 139px;
+    margin-right: 8px;
+}
+/* footer */
+.footer {
+    padding-top:48px;
+    padding-bottom:48px;
+}
+.widget__logo-img {
+    width: 85%;
+}
+.widget__mess-logo,
+.widget__telephone-logo{
+    width: 40px;
+    margin-right: 12px;
+}
+.widget__mess,
+.widget__telephone {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.widget__mess-info--name,
+.widget__telephone-info--name {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 500;
+    line-height: 2.1rem;
+}
+.widget__mess-info--link:hover ,
+.widget__telephone-info--link:hover {
+    color: #f65e39;
+}
+.widget__mess-info--link,
+.widget__telephone-info--link {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #222;
+    text-decoration: none;
+}
+.homestay__heading {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.homestay__item {
+    list-style: none;
+}
+.homestay__item-link:hover {
+    color: #f65e39;
+}
+.homestay__item-link {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.4rem;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+.footer__qrcode-img {
+    width: 62px;
+    padding: 10px;
+    border: 1px solid rgb(0 0 0 / 20%);
+    box-sizing: content-box;
+}
+.footer__app-download {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer__app-dowwnload--img {
+    margin-bottom: 12px;
+    width: 100px;
+}
+.cert__item {
+    display: flex;
+    align-items: center;
+}
+.cert_img {
+    margin-right: 16px;
+    width: 92px;
+}
+.footer_2 {
+    margin-top: 30px;
+}
+.folow__link{
+    margin-right: 12px;
+}
+.footer__end {
+    border-top: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 24px 15px;
+
+}
+.footer__end-content {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 6px;
+    color: #999;
+    line-height: 2.1rem;
+}

@@ -1,0 +1,182 @@
+/* mobie tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobie-tablet {
+        display: none;
+    }
+    .place__list > .row,
+    .event__list > .row,
+    .suggest__list > .row,
+    .discover__list > .row,
+    .tutorial__list > .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .row::-webkit-scrollbar {
+        display: none;
+    }
+    .row::-moz-horizontal-scrollbar {
+        display: none;
+      }
+    
+    .header__nav-btn {
+        display: block;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header__nav-btn {
+        margin-right: 32px;
+    }
+
+   .grid.wide {
+    max-width: 1260px;
+    margin: 0 32px;
+}
+    .header__nav-c {
+        width: 33vw;
+    }
+
+    .col {
+        max-width: 47%;
+        background-size: contain;
+    }
+    .place__list > .row > .col,
+    .discover__list > .row > .col {
+        max-width: 90%;
+        background-size: contain;
+    }
+    .place__list,
+    .event__list,
+    .suggest__list,
+    .discover__list,
+    .tutorial__list {
+        margin: 0 12px;
+    }
+    .wellcome-heading,
+    .place-heading,
+    .event-heading,
+    .suggest-heading,
+    .discover-heading,
+    .tutorial-heading {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .wellcome-content,
+    .place-content,
+    .event-content,
+    .suggest-content,
+    .discover-content,
+    .tutorial-content {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .about > .row > .col,
+    .header > .grid > .row > .col {
+        max-width: 100%;
+    }
+    .about__sologan {
+        font-size: 2.3rem;
+    }
+    .place {
+        margin-top: 8px;
+    }
+    .slider-fix {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .homestay,
+    .widget,
+    .about {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .about__content {
+        margin-bottom: 0;
+    }
+    .about__app-download {
+        padding-top: 30px;
+    }
+    .about__app-img {
+        margin-top: 48px;
+    }
+    .header__nav-btn {
+        display: block;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .col {
+        max-width: 90%;
+        background-size: contain;
+    }
+    .place__list > .row > .col {
+        max-width: 47%;
+        background-size: contain;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .place__list,
+    .event__list,
+    .suggest__list,
+    .discover__list,
+    .tutorial__list {
+        margin: 0 12px;
+    }
+    .wellcome-heading,
+    .place-heading,
+    .event-heading,
+    .suggest-heading,
+    .discover-heading,
+    .tutorial-heading {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .wellcome-content,
+    .place-content,
+    .event-content,
+    .suggest-content,
+    .discover-content,
+    .tutorial-content {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .about > .row > .col,
+    .header > .grid > .row > .col {
+        max-width: 100%;
+    }
+    .about__sologan {
+        font-size: 2.3rem;
+    }
+    .place {
+        margin-top: 8px;
+    }
+    .slider-fix {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .homestay,
+    .widget,
+    .about {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .about__content {
+        margin-bottom: 0;
+    }
+    .about__app-download {
+        padding-top: 30px;
+    }
+    .about__app-img {
+        margin-top: 48px;
+    }
+    .header__nav-btn {
+        display: block;
+    }
+}
